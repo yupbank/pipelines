@@ -145,14 +145,14 @@ export const theme = createMuiTheme({
       },
     },
     MuiInput: {
-      input: {padding: 0},
-      root: {padding: 0}
+      input: { padding: 0 },
+      root: { padding: 0 }
     },
     MuiInputAdornment: {
       positionEnd: {
         paddingRight: 0,
       },
-      root: {padding: 0},
+      root: { padding: 0 },
     },
     MuiTooltip: {
       tooltip: {

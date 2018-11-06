@@ -17,8 +17,8 @@
 import * as React from 'react';
 import CustomTable, { Column, Row } from '../components/CustomTable';
 import RunUtils from '../../src/lib/RunUtils';
-import { Apis, RunSortKeys, ListRequest } from '../lib/Apis';
 import { ApiListRunsResponse, ApiRunDetail, ApiRun, ApiResourceType, RunMetricFormat, ApiRunMetric } from '../../src/apis/run';
+import { Apis, RunSortKeys, ListRequest } from '../lib/Apis';
 import { Link, RouteComponentProps } from 'react-router-dom';
 import { NodePhase, statusToIcon } from './Status';
 import { RoutePage, RouteParams } from '../components/Router';
