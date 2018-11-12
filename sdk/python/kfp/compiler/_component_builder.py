@@ -34,7 +34,7 @@ class GCSHelper(object):
     gcs_bucket = pure_path.parts[1]
     gcs_blob = '/'.join(pure_path.parts[2:])
     client = storage.Client()
-    bucket = client.get_bucket(gcs_bucket)
+    bucket = client.bucket(gcs_bucket)
     blob = bucket.blob(gcs_blob)
     blob.upload_from_filename(local_path)
 
@@ -44,7 +44,7 @@ class GCSHelper(object):
     gcs_bucket = pure_path.parts[1]
     gcs_blob = '/'.join(pure_path.parts[2:])
     client = storage.Client()
-    bucket = client.get_bucket(gcs_bucket)
+    bucket = client.bucket(gcs_bucket)
     blob = bucket.blob(gcs_blob)
     blob.delete()
 
@@ -54,7 +54,7 @@ class GCSHelper(object):
     gcs_bucket = pure_path.parts[1]
     gcs_blob = '/'.join(pure_path.parts[2:])
     client = storage.Client()
-    bucket = client.get_bucket(gcs_bucket)
+    bucket = client.bucket(gcs_bucket)
     blob = bucket.blob(gcs_blob)
     blob.download_to_filename(local_path)
 
